@@ -7,7 +7,7 @@ function fetchMovies(query) {
     return // Прекращение выполнения, если запрос слишком короткий
   }
   
-  const url = `http://www.omdbapi.com/?apikey=${API_KEY}&s=${query}`
+  const url = `https://www.omdbapi.com/?apikey=${API_KEY}&s=${query}`
 
   // Выполняется запрос к API
   fetch(url) // fetch — это встроенная функция JS для отправки HTTP-запросов. Она отправляет GET-запрос на указанный URL и возвращает promise (объект, представляющий выполнение асинхронной операции).
